@@ -1,0 +1,10 @@
+name: "Close stale issues"
+on:
+  schedule:
+    - cron: "* * * * *"
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello world"
