@@ -4,7 +4,9 @@ on:
     - cron: "* * * * *"
 
 jobs:
-  stale:
+  build:
+    name: Trigger Site Rebuild
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello world"
+      - name: cURL request
+        run: echo "hello world"
